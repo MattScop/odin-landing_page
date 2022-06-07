@@ -84,7 +84,7 @@ a:hover {
 .main-section {
     max-width: 1100px;
     margin: 0 auto;
-    padding-top: 48px;  
+    padding: 48px 0;  
 }
 
 .main-wrap {
@@ -136,4 +136,38 @@ a:hover {
 
 .sign-up:hover {
     background-color: #3881f681;
+}
+
+/* BOXES SECTION  */
+.boxes-section {
+    background-color: white;
+    color: #1f2937;
+    padding: 24px 0;
+}
+
+.section-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-wrap h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.boxes-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.box {
+    flex-basis: 300px;
+    text-align: center;
+}
+
+.box img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
 }
