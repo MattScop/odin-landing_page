@@ -170,4 +170,5 @@ a:hover {
     max-width: 300px;
     height: auto;
     border-radius: 15px;
+    box-shadow: 5px 8px 15px 0px #000;
 }
