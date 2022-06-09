@@ -84,7 +84,7 @@ a:hover {
 .main-section {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 48px 0;  
+    padding: 100px 0;  
 }
 
 .main-wrap {
@@ -142,7 +142,7 @@ a:hover {
 .boxes-section {
     background-color: white;
     color: #1f2937;
-    padding: 24px 0;
+    padding: 100px 0;
 }
 
 .section-wrap {
@@ -153,11 +153,12 @@ a:hover {
 .section-wrap h2 {
     text-align: center;
     padding-bottom: 15px;
+    margin-top: 0;
 }
 
 .boxes-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 50px;
 }
 
@@ -171,4 +172,31 @@ a:hover {
     height: auto;
     border-radius: 15px;
     box-shadow: 5px 8px 15px 0px #000;
+}
+
+.grey-section {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+.container-grey-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.wrap-grey {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap-grey p {
+    margin: 0;
+    font-size: 36px;
+}
+
+.wrap-grey span {
+    font-weight: bold;
+    align-self: flex-end;
+    font-size: 28px;
 }
