@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,7 +7,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #1f2937;
+    background-image: url('img/flames.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     font-family: Ubuntu, sans-serif;
     height: 100vh;
 }
@@ -34,8 +35,10 @@ a:hover {
 
 /* HEADER  */
 .header {
-    color: #f9faf8;
+    background-color: rgba(31, 41, 55, 0.8);
+    color: #f9faf8; 
     font-size: 24px;
+    backdrop-filter: blur(5px);
 }
 
 .header-wrap {
@@ -82,15 +85,18 @@ a:hover {
 
 /* MAIN SECTION  */
 .main-section {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 100px 0;  
+    background-color: #1f2937cc;
+    padding: 72px 0;  
+    backdrop-filter: blur(5px);
 }
 
 .main-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 .left-wrap,
@@ -103,21 +109,13 @@ a:hover {
     height: 100%;
     position: relative;
     overflow: hidden;
-}
-
-.right-wrap::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    box-shadow: 0px 0px 20px 20px #1f2937;
-    width: 100%;    
+    border-radius: 15px;
+    box-shadow: 0 0 15px 0px white;
 }
 
 .right-wrap img {
     width: 50vh;
     height: auto;
-    border-radius: 15px;
 }
 
 .left-wrap h1 {
@@ -125,24 +123,30 @@ a:hover {
     margin-bottom: 0;
 }
 
+.left-wrap p {
+    margin: 20px 0;
+}
+
 .sign-up {
-    padding: 10px 30px;
+    padding: 15px 45px;
     border-radius: 10px;
-    background-color: #3882f6;
+    outline: 2px solid white;
+    background-color: #00000075;
     color: white;
     font-weight: bold;
+    font-size: 18px;
     cursor: pointer;
 }
 
 .sign-up:hover {
-    background-color: #3881f681;
+    background-color: #ffffff75;
 }
+
 
 /* BOXES SECTION  */
 .boxes-section {
-    background-color: white;
     color: #1f2937;
-    padding: 100px 0;
+    padding: 72px 0;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -152,13 +156,13 @@ a:hover {
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
 }
 
 .section-wrap h2 {
     text-align: center;
     padding-bottom: 15px;
     margin-top: 0;
+    font-size: 36px;
 }
 
 .boxes-wrap {
@@ -179,39 +183,52 @@ a:hover {
     box-shadow: 5px 8px 15px 0px #000;
 }
 
-.grey-section {
-    background-color: #e5e7eb;
-    color: #1f2937;
+.skew::after {
+    content: '';
+    position: absolute;
+    width: 1100%;
+    height: 1100%;
+    top: 20px;
+    right: -490%;
+    background: rgba(255,255,255,.97);
+    transform-origin: 54% 0;
+    transform: rotate(45deg);
+    z-index: 0;
+    backdrop-filter: blur(5px);
 }
 
-.container-grey-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 100px 0;
+
+/* GREY SECTION  */
+.grey-section {
+    background-color: rgba(229, 231, 235, .8);
+    color: #1f2937;
+    backdrop-filter: blur(5px);
 }
 
 .wrap-grey {
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 72px 0;
 }
 
 .wrap-grey p {
     margin: 0;
-    font-size: 36px;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .wrap-grey span {
     font-weight: bold;
     align-self: flex-end;
-    font-size: 28px;
+    font-size: 24px;
 }
 
+
+/* CALL-TO-ACTION SECTION  */
 .action {
-    background-color: #fff;
-    background-image: url('img/background-flames.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
     padding: 100px 0;
 }
 
@@ -224,44 +241,29 @@ a:hover {
     align-items: center;
     padding: 36px 0;
     border-radius: 15px;
+    color: white;
+    backdrop-filter: blur(5px);
 }
 
-.action-wrap h4 {
+.action-wrap h2 {
     margin-bottom: 0;
 }
 .action-wrap p {
     margin-top: 10px;
 }
 
-.sign-up.button-action {
-    outline: 2px solid white;
-    background-color: #00000075;
+.sign-up.button-action:hover {
+    background-color: #00000090;
     text-decoration: none;
 }
 
-.sign-up.button-action:hover {
-    background-color: #00000090;
-}
 
-footer {
+/* FOOTER  */
+.footer {
+    background-color: rgba(31, 41, 55, .8);
+    color: white;
     padding: 25px;
     margin: 0 auto;
-    max-width: 1100px;
     text-align: center;
-}
-
-.skew {
-    height: 100%;
-    width: 650px;
-    position: absolute;
-    top: 0;
-    right: -300px;
-    clip-path: polygon(67% -2%, 95% 0%, 99% 113%, 11% 109%);
-    z-index: 0;
-}
-
-.skew img {
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+    backdrop-filter: blur(5px);
 }
